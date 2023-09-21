@@ -55,10 +55,6 @@ function drawMap(countyData, eduData) {
   }); 
 
   // legend
-  const xScale = d3.scaleLinear()
-    .domain([0, 80])
-    .range([0, 300])
-
   const legend = d3.select('#legend')
     .attr('transform', `translate(250, -650)`);
   
