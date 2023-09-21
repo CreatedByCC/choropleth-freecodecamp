@@ -55,12 +55,8 @@ function drawMap(countyData, eduData) {
   }); 
 
   // legend
-  const xScale = d3.scaleLinear()
-    .domain([0, 70])
-    .range([0, 300])
-
   const legend = d3.select('#legend')
-    .attr('transform', `translate(250, -650)`);     // moving the legend so that is above my map
+    .attr('transform', `translate(250, -650)`);     // moving the legend so that it is above the map
   
   legend.selectAll('rect')
     .data(color.domain())
